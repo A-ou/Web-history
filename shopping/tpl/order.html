@@ -1,0 +1,37 @@
+<div id="outer">
+	<div class="order_top">
+		<span id="order_left" ng-click="backToPrevious()"> &lt;</span>
+		<span class="orderStail">订单详情</span>
+	</div>
+	<div class="order_num">
+		<p>订单编号：5161011876200272</p>
+		<p>订单状态：等待付款</p>
+	</div>
+	<ul class="goods_ord">
+		<li>
+			<div class="order_img"><img ng-src="images/{{data_goods[1]}}" alt=""></div>
+			<div class="order_goods_detail">
+				<h3>{{data_goods[2]}}</h3>
+				<p>售价：<span>{{data_goods[3]}}</span>元x<span>1</span></p>
+			</div>
+		</li>
+	</ul>
+	<div class="date_ort">
+		<div class="order_num">
+			<p>下单日期：2016/10/11 10:57</p>
+			<p>收货地址：河南省 洛阳市 洛阳师范学院</p>
+		</div>
+	</div>
+</div>
+<footer id="pay">
+	<div id="pay_num">
+		<p>应付总额:</p>
+		<span>{{data_goods[3]}}元</span>
+	</div>
+	<div id="now_pay">
+		立即支付
+	</div>
+	<div id="cancle_pay">
+		取消订单
+	</div>
+</footer>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:100px;">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/addres.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=yes" />
+</head>
+<body>
+	<div id="outer">
+		<div class="top">
+			<span id="left"> &lt;</span>
+			<span>新增地址</span>
+		</div>
+		<ul class="mesg">
+			<li>
+				<form action="">
+					收货人: <input type="text" value="" id="name" placeholder="真实姓名">
+				</form>
+			</li>
+			<li>
+				<form action="">
+					手机号码: <input type="text" value="" id="name" placeholder="手机号码">
+				</form>
+			</li>
+			<li>
+				<form action="">
+					所在地区: <input type="text" value="" id="name" placeholder="省 市 区 街道信息">
+				</form>
+			</li>
+			<li>
+				<form action="">
+					详细地址: <input type="text" value="" id="name" placeholder="详细地址">
+				</form>
+			</li>
+		</ul>
+	</div>
+	<footer id="foot">
+		<p>保存地址</p>
+	</footer>
+<script>
+	function scale1(ev) {
+		var HTML=document.getElementsByTagName('html')[0];
+		var Ww=document.documentElement.clientWidth;
+		var scale=Ww/750;
+		HTML.style.fontSize=scale*100+'px';
+	}
+	scale1();
+	var left=document.getElementById('left');
+	left.onclick=function(){
+		history.back(1)
+	}
+</script>
+</body>
+</html>

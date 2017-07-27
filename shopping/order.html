@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:100px;">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/order.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=yes" />
+</head>
+<body>
+	<div id="outer">
+		<div class="top">
+			<span id="left"> &lt;</span>
+			<span>订单详情</span>
+		</div>
+		<div class="order_num">
+			<p>订单编号：5161011876200272</p>
+			<p>订单状态：等待付款</p>
+		</div>
+		<div class="goods_ord">
+			<img src="images/pia.jpg" alt="">
+		</div>
+		<div class="date_ort">
+			<div class="order_num">
+				<p>下单日期：2016/10/11 10:57</p>
+				<p>收货地址：河南省 洛阳市 洛阳师范学院</p>
+			</div>
+		</div>
+	</div>
+	<footer id="pay">
+		<div id="pay_num">
+			<p>应付总额:</p>
+			<span>799元</span>
+		</div>
+		<div id="now_pay">
+			立即支付
+		</div>
+		<div id="cancle_pay">
+			取消订单
+		</div>
+	</footer>
+
+<script>
+	function scale1(ev) {
+		var HTML=document.getElementsByTagName('html')[0];
+		var Ww=document.documentElement.clientWidth;
+		var scale=Ww/750;
+		HTML.style.fontSize=scale*100+'px';
+	}
+	scale1();
+	var now_pay=document.getElementById('now_pay');
+	var cancle_pay=document.getElementById('cancle_pay');
+	now_pay.onclick=function(){
+		window.open('pay.html','_self');
+	}
+	cancle_pay.onclick=function(){
+		now_pay.style.backgroundColor='#fdfdfd';
+		now_pay.style.color='black';
+		cancle_pay.style.background='#ff5722';
+		cancle_pay.style.color='#ffffff';
+	}
+	var left=document.getElementById('left');
+	left.onclick=function(){
+		history.back(1)
+	}
+</script>
+</body>
+</html>

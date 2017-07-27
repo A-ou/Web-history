@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en"  style="font-size:100px;">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/pay.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=yes" />
+</head>
+</head>
+<body>
+	<div id="outer">
+		<div class="top">
+			<span id="left"> &lt;</span>
+			<span>订单详情</span>
+		</div>
+		<div class="border"></div>
+		<div class="add_addres">
+				<span class="link_left"><a href="addres.html">添加收货地址</a></span>
+				<span class="link_right"><a href="addres.html">&gt;</a></span>
+		</div>
+		<div class="select"><p>选择支付方式</p></div>
+		<ul id="pay_way">
+			<li>
+				<p><img src="images/wx.jpg" alt="">微信支付</p>
+				<span></span>
+			</li>
+			<li>
+				<p><img src="images/zfb.jpg" alt="">支付宝支付</p>
+				<span></span>
+			</li>
+			<li>
+				<p><img src="images/hdfk.jpg" alt="">货到付款</p>
+				<span></span>
+			</li>
+		</ul>
+		<ul id="pay_other">
+			<li>
+				<p>发票类型</p>
+				<span>电子发票 &nbsp;&gt;</span>
+			</li>
+			<li>
+				<p>送货类型</p>
+				<span>不限送货时间 &nbsp;&gt;</span>
+			</li>
+		</ul>
+		<div id="coupon"><p>我有优惠劵</p></div>
+		<ul id="goods">
+			<li>
+				<p><img src="images/sj.jpg" alt=""><a href="###">红米Note 3全网通版 金色 16GB</a></p>
+				<span>799元</span>
+			</li>
+			<li>
+				<p><img src="images/pb.jpg" alt=""><a href="###">[赠品] 钢化玻璃膜（0.33mm）透明</a></p>
+			</li>
+		</ul>
+	</div>
+	<footer id="foot">
+		<div id="num_price">
+			<p id="num">共三件 合计 ：</p>
+			<span id="price">￥799</span>
+		</div>
+		<div id="go_pay">去付款</div>
+	</footer>
+<script>
+	function scale1(ev) {
+		var HTML=document.getElementsByTagName('html')[0];
+		var Ww=document.documentElement.clientWidth;
+		var scale=Ww/750;
+		HTML.style.fontSize=scale*100+'px';
+	}
+	scale1();
+	var pay_way=document.getElementById('pay_way');
+	var spans=pay_way.getElementsByTagName('span')
+	for (var i = 0; i < spans.length; i++) {
+		spans[i].onclick=function(){
+			for (var i = 0; i < spans.length; i++) {
+				if (spans[i]==this) {
+					spans[i].style.background='#ff5722';
+				}else{
+					spans[i].style.background=''
+				}
+			};
+		}
+	};
+	var left=document.getElementById('left');
+	left.onclick=function(){
+		history.back(1)
+	}
+</script>
+</body>
+</html>

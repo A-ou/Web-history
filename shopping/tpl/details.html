@@ -1,0 +1,103 @@
+<div class="detail_top">
+		<span id="detail_left" ng-click="backToPrevious()"> &lt;</span>
+		<span id="search"></span>
+	</div>
+	<div class="goodssj"><img ng-src="images/{{data_goods.images}}" alt=""></div>
+	<div class="details">
+		<div class="write">
+			<h3>{{data_goods.title}}</h3>
+			<div style="color:#ff6b00;font-size:0.3rem;">￥{{data_goods.price}}</div>
+			<p><span>【9.30日-10.9购机即可参加1分钱购福袋活动】</span>{{data_goods.details}}</p>
+		</div>
+		<ul class="goods_style">
+			<li>颜色</li>
+			<li>玫瑰金</li>
+			<li>黑色</li>
+			<li>银色</li>
+			<li>容量</li>
+			<li>64GB</li>
+		</ul>
+		<div class="sl">数量</div>
+		<ul id="num">
+				<li class="sub">—</li>
+				<li class="figure">0</li>
+				<li class="add">+</li>
+		</ul>
+	</div>
+	<div class="addres">
+		<span>送至</span>
+		<div id="sendTo">
+			<h4>广东省深圳市南山区</h4>
+			<p><span>有货</span> 10:10前完成下单，预计今天（10月10日）送达</p>
+		</div>
+		<p class="freight">运费<span>满99免运费</span></p>
+	</div>
+	<div class="detail_rec">
+		<p>为您服务</p>
+		<ul class="rec_img">
+			<li><img src="images/r1.jpg" alt=""></li>
+			<li><img src="images/r2.jpg" alt=""></li>
+			<li><img src="images/r3.jpg" alt=""></li>
+			<li><img src="images/r4.jpg" alt=""></li>
+		</ul>
+	</div>
+	<div class="goods_detail">
+		<div class="xq_cs">
+			<span>商品详情</span>
+			<span>参数</span>
+		</div>
+		<h2>{{data_goods.title}}</h2>
+		<div class="deploy">
+			<p>{{data_goods.parameter}}</p>
+			<!-- <p>4轴防抖相机，3D陶瓷/玻璃机身</p> -->
+		</div>
+		<div class="piat">
+			<img src="images/piapiapia.jpg" alt="">
+		</div>
+		<ul class="canshu">
+			<li>
+				<img src="images/820.jpg" alt="">
+				<p>骁龙820 4GB+128GB</p>
+			</li>
+			<li>
+				<img src="images/ufs.jpg" alt="">
+				<p>UFS 2.0 闪存</p>
+			</li>
+			<li>
+				<img src="images/zfd.jpg" alt="">
+				<p>4 轴防抖相机</p>
+			</li>
+			<li>
+				<img src="images/4g.jpg" alt="">
+				<p>4g+网络</p>
+			</li>
+			<li>
+				<img src="images/16.jpg" alt="">
+				<p>16颗灯 省电高亮屏幕</p>
+			</li>
+			<li>
+				<img src="images/kc.jpg" alt="">
+				<p>快充 3.0</p>
+			</li>
+			<li>
+				<img src="images/nfc.jpg" alt="">
+				<p>全功能 NFC</p>
+			</li>
+			<li>
+				<img src="images/dti.jpg" alt="">
+				<p>DTI 画质增强</p>
+			</li>
+			<li>
+				<img src="images/qwt.jpg" alt="">
+				<p>全网通3.0</p>
+			</li>
+		</ul>
+	</div>
+</div>
+<footer class="fot">
+	<div><a href="index.html#/"><img src="images/sy.png" alt=""></a><a href="###">首页</a></div>
+	<div class="xian"></div>
+	<div ng-click="login('shopcar')"><a><img src="images/gwc.png" alt=""></a><a>购物车</a></div>
+	<a id="buy_now" ng-click="login('order')">立即购买</a>
+	<a id="add_car"  ng-click="adCar('shopcar')">加入购物车</a>
+</footer>

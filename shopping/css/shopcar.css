@@ -1,0 +1,30 @@
+#outer{width: 7.5rem;margin: 0 auto;height: 100%; }
+.shopcar_top{height: 0.85rem;background-color: #f3f3f3;text-align: center;line-height: 0.85rem;overflow: hidden;border-bottom: 0.01rem solid #dedede;}
+.shopcar_tit{font-size: 0.34rem;}
+.shopcar_left{float: left;margin-left: 0.2rem;font-size: 0.5rem;}
+.goods{height: 3.2rem;position: relative;background-color: #ffffff;width: 7.5rem;margin-bottom: 0.1rem;}
+#circle{width: 0.3rem;height: 0.3rem;border:0.01rem solid #dedede;border-radius: 50%;position: absolute;top: 0.6rem;left: 0.1rem;}
+#goods_img{float: left;width: 1.2rem;height: 1.5rem;margin-left: 0.6rem;margin-top: 0.2rem;}
+#goods_img img{width: 0.8rem;height: 1.2rem;}
+#goods_img2 img{width: 0.5rem;height: 1.2rem;}
+.goods_details{float: left;margin-top: 0.2rem;overflow: hidden;}
+.goods_details h4{float: left;}
+.goods_details span{float: left;}
+#num{overflow: hidden;margin-top: 0.2rem;float: left;}
+#num1{overflow: hidden;margin-top: 0.2rem;}
+#num li{float: left;width: 0.75rem;height: 0.65rem;border:0.01rem solid #dedede;text-align: center;line-height: 0.65rem;font-size: 0.3rem;}
+#num1 li{float: left;width: 0.75rem;height: 0.65rem;border:0.01rem solid #dedede;text-align: center;line-height: 0.65rem;font-size: 0.3rem;}
+#delate{width: 0.4rem;height: 0.7rem;background:url(../images/delate.jpg)0 0 no-repeat;background-size: 0.4rem;float: right;margin-top: 1.2rem;margin-right: 0.25rem;}
+#safe{width:7.05rem;height:0.85rem;background-color: ;position: absolute;bottom: 0.2rem;left: 50%;margin-left: -3.525rem; overflow: hidden;line-height: 0.85rem;background:#f3f3f3 url(../images/safe.jpg)0.1rem 0.2rem no-repeat;background-size:0.5rem; }
+#safe p{float: left;margin-left: 0.7rem;}
+#safe span{float: right;margin-right: 0.2rem;color:#ff5722;font-size: 0.28rem; }
+.gift{height: 2.35rem;background-color: #ffffff;border-top: 0.01rem solid #dedede;}
+#gift_img{float:left;width: 1.7rem;margin-left: 0.6rem;margin-top: 0.2rem;}
+#gift_img2{float:left;width: 1.7rem;margin-left: 0.6rem;margin-top: 0.2rem;}
+#gift_img img{width: 1.45rem;height: 1.7rem;}
+#gift_img2 img{width: 1rem;height: 1.7rem;}
+.goods_details h4 span{width: 0.7rem;height: 0.4rem;color: #ffffff;text-align: center;line-height: 0.4rem;background-color: #5b77d6;border-radius: 10%;font-size: 0.18rem;float: left;margin-right: 0.1rem;}
+.fot{width: 7.5rem;height: 1rem;background-color: #f3f3f3;overflow: hidden;line-height: 1rem;margin-top: 0.321rem;position: fixed;bottom: 0rem;}
+.fot p{float: left;margin-left: 0.2rem;}
+#go_pay{width: 3.45rem;height: 0.7rem;background-color: #ff5722;text-align: center;line-height: 0.7rem;float: right;margin-right: 0.2rem;color: #ffffff;margin-top: 0.15rem;}
+#price{font-size: 0.3rem;color: #ff5722;font-weight: bolder;}

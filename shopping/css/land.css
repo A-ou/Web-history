@@ -1,0 +1,9 @@
+/*#outer{width: 750px;margin: 0 auto;background-color: #F3F3F3; }*/
+.top{height: 95px;background-color:#FF7A03;text-align: center; }
+.top span{color: #ffffff;font-size: 40px;line-height: 95px;}
+.left{float: left;padding-left: 25px;}
+.tx{width: 166px;height: 166px;margin: 0 auto;margin-top: 200px;}
+.mes{width: 360px;height: 100px;margin: 0 auto;font-size: 24px;text-align: center;margin-top: 40px;margin-bottom: 110px;}
+#name{margin-bottom: 20px;font-size: 26px;}
+#land{width: 600px;height: 70px;background-color: #51c422;font-size: 40px;text-align: center;line-height: 70px;border-radius: 50px;margin: 0 auto;}
+#land a{color: #ffffff;}

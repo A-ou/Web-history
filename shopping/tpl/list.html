@@ -1,0 +1,32 @@
+<div class="top">
+	<span class="left" ng-click="backToPrevious()">&lt;</span>
+	<span class="middle">商品列表</span>
+	<span class="right">
+		<a href="#/discover"><img src="images/left.png" alt=""></a>
+	</span>
+</div>
+<ul class="rec">
+	<li><a href="###">推荐</a></li>
+	<li><a href="###">新品</a></li>
+	<li><a href="###">价格</a></li>
+	<li><a href="###">筛选</a></li>
+</ul>
+<div class="list_wrapper">
+	<a ng-repeat="x in dsc" ng-href="#/detail/{{x.id}}" class="list_cont">
+		<div class="list_cont_left">
+			<img ng-src="images/{{x.img}}" alt="">
+		</div>
+		<div class="list_cont_right">
+			<h3>{{x.title}}</h3>
+			<p>{{x.details}}</p>
+			<span>{{x.price}}元 起</span>
+		</div>
+	</a>
+</div>
+<ul class="bot">
+	<li><a href="index.html#/"><img src="images/sy.png" alt=""><p>首页</p></a></li>
+	<li><a ng-href="#/classify"><img src="images/fl.png" alt=""><p>分类</p></a></li>
+	<li><a ng-href="#/discover"><img src="images/fx.png" alt=""><p>发现</p></a></li>
+	<li><a href="shopcar.html"><img src="images/gwc.png" alt=""><p>购物车</p></a></li>
+	<li><a href="#/person"><img src="images/wd.png" alt=""><p>我的</p></a></li>
+</ul>

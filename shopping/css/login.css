@@ -1,0 +1,21 @@
+html{width: 100%;height: 100%;}
+body{height: 92.8%;}
+.login-top{height: 0.95rem;text-align: center;overflow: hidden;background: #6CB9C1; }
+#login-left{float: left;width: 0.5rem;height: 0.9rem;background: url(../images/reL1.png) center center no-repeat;margin-left: 0.25rem;background-size: 85%;}
+.login-right{float: right;color: #ffffff;font-size: 0.3rem;height: 0.95rem;line-height: 0.95rem;margin-right: 0.3rem;}
+.login-sec{background:#6CB9C1;height: 100%;}
+.ipt-wrapper{padding-top: 0.5rem;overflow: hidden;border-bottom: 0.01rem solid #dedede;color: #ffffff;font-size: 0.3rem;width: 90%;margin: 0 auto;}
+.ipt-style{outline: none;border: none;height: 0.9rem;background:#6CB9C1;width: 70%;}
+.ipt-style::-webkit-input-placeholder{color: #ffffff;font-size: 0.24rem;}
+#user{padding-left: 0.2rem;font-size: 0.36rem;color: #ffffff;}
+#pasd{padding-left: 0.2rem;font-size: 0.36rem;color: #ffffff;}
+#cod{width: 50%;border-right: 0.02rem;float: left;padding-left: 0.2rem;color: #ffffff;}
+.lab-cod{float: left;height: 0.9rem;line-height: 0.9rem;}
+.bor-R{float: left;height: 0.7rem;border: 0.01rem solid #dedede;}
+.btn-wrapper{width: 90%;margin: 0 auto;margin-top: 1rem;}
+button{background: rgba(255,255,255,.2);border: none;outline: none;width: 49%;color: #ffffff;height: 0.8rem;line-height: 0.8rem;}
+.login-logo{overflow: hidden;width: 60%;margin: 0 auto;margin-top: 1rem;}
+.login-logo li{float: left;width: 0.9rem;height: 0.85rem;margin-right: 0.6rem;margin-top: 0.2rem;}
+.QQ{background: url(../images/login_logo1.png)-6px -15px no-repeat;}
+.WX{background: url(../images/login_logo1.png)-67px -15px no-repeat;}
+.sina{background: url(../images/login_logo1.png)-129px -15px no-repeat;}

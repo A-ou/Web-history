@@ -1,0 +1,33 @@
+#outer{width: 7.5rem;margin: 0 auto;background-color: #f3f3f3;overflow: hidden; }
+.top{height: 0.85rem;text-align: center;line-height: 0.85rem;overflow: hidden;}
+.top span{font-size: 0.4rem;margin:0 auto;}
+#left{float: left;margin-left: 0.2rem;font-size: 0.5rem;}
+.border {width: 7.5rem;height: 0.1rem;background: url(../images/border.jpg)0 0 no-repeat;}
+.add_addres{height: 1.35rem;overflow: hidden;background-color: #ffffff;line-height: 1.35rem;};
+#link_add{height: 0.5rem;width: 6.85rem;margin: 0 auto;overflow: hidden;}
+.link_left {float: left;margin-left: 0.5rem;font-size: 0.3rem;}
+.link_right{float: right;margin-right: 0.5rem;font-size: 0.3rem;font-weight: bolder;}
+.select{height: 0.77rem;margin-top: 0.2rem;background-color: #ffffff;line-height: 0.77rem;}
+.select p{font-size: 0.3rem;color: #dedede;margin-left: 0.2rem;}
+#pay_way{height: 2.4rem;background-color: #ffffff;}
+#pay_way li{height: 0.7rem;line-height: 0.7rem;border-top: 0.01rem solid #dedede;overflow: hidden;position: relative;}
+#pay_way p{float: left;margin-left: 0.3rem;font-size: 0.28rem;color: #000000;}
+#pay_way p img{width: 0.5rem;height: 0.5rem;vertical-align: middle;padding-right: 0.1rem;}
+#pay_way span{float: right;width: 0.35rem;height: 0.35rem;border:0.01rem solid #999;border-radius: 50%;position: absolute;top: 0.15rem;right: 0.3rem;}
+#pay_other{height: 1.45rem;background-color: #ffffff;margin-top: 0.2rem;}
+#pay_other li{height: 0.7rem;line-height: 0.7rem;border-bottom: 0.01rem solid #dedede;overflow: hidden;position: relative;}
+#pay_other p{float: left;margin-left: 0.3rem;font-size: 0.28rem;color: #000000;}
+#pay_other span{float: right;position: absolute;right: 0.3rem;font-size: 0.28rem;color: #999;}
+#coupon{height:0.7rem;line-height: 0.7rem;background-color: #ffffff;}
+#coupon p{font-size: 0.28rem;margin-left: 0.3rem;color: #999;}
+#goods{margin-top: 0.2rem;background-color: #ffffff;}
+#goods li{height: 1.1rem;line-height: 1.1rem;font-size: 0.30rem;border-bottom: 0.01rem solid #dedede;}
+#goods li img{width: 0.55rem;height: 0.75rem;vertical-align: middle;padding-right: 0.2rem;}
+#goods li p{float: left;margin-left: 0.3rem;}
+#goods li p a{color: #000000;}
+#goods li span{float: right;margin-right: 0.3rem;color: #ff5722;font-weight: bolder;}
+#foot{height: 1rem;width: 7.5rem;border-top: 0.01rem solid #dedede;background-color: #fdfdfd;line-height: 1rem; overflow: hidden;margin-top: 1rem;}
+#num_price{width:2.8rem;float: left;margin-left: 0.3rem; overflow: hidden;}
+#num_price p{float: left;font-size: 0.24rem;color: #dedede;}
+#num_price span{float: right;font-size: 0.3rem;color: #ff5722;font-weight: bolder;}
+#go_pay{width: 3.4rem;height: 0.7rem;background-color: #ff5722;color: #ffffff;text-align: center;line-height: 0.7rem;font-size: 0.3rem;float: right;margin-top: 0.18rem;}

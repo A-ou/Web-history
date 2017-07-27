@@ -1,0 +1,21 @@
+<div class="top">
+		<span id="discov_left" ng-click="backToPrevious()">&lt;</span>
+		<span class="middle">商品列表</span>
+		<span class="right">
+			<a href="#/list"><img src="images/left.png" alt=""></a>
+		</span>
+	</div>
+	<ul class="rec">
+		<li><a href="###">推荐</a></li>
+		<li><a href="###">新品</a></li>
+		<li><a href="###">价格</a></li>
+		<li><a href="###">筛选</a></li>
+	</ul>
+	<div id="tj">
+		<a href="###"><img src="images/tj.jpg" alt=""></a>
+	</div>
+	<ul class="goods_show">
+		<li ng-repeat="x in dsc"><a href="#/detail/{{x.id}}"><img ng-src="images/{{x.img}}" alt=""><p>{{x.title}}</p><span>￥{{x.price}}</span></a></li>
+	</ul>
+</div>
+<div ng-include="'tpl/footer.html'"></div>

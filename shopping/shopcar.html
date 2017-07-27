@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:100px;">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/shopcar.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=yes" />
+</head>
+<body>
+	<div id="outer">
+		<div class="top">
+			<span id="left"> &lt;</span>
+			<span>购物车</span>
+		</div>
+		<div class="goods">
+			<span id="circle"></span> 
+			<div id="goods_img"><a href="###"><img src="images/sj.jpg" alt=""></a></div>
+			<div class="goods_details">
+				<h4>红米Note 3全网通版 金色 16GB</h4>
+				<span>售价： 799元 &nbsp;合计：799元</span>
+				<ul id="num">
+					<li class="sub">—</li>
+					<li class="figure">0</li>
+					<li class="add">+</li>
+				</ul>
+			</div>
+			<div id="delate"></div>
+			<div id="safe"><p>意外保障服务 红米Note3 59元/年</p><span>购买服务</span></div>
+		</div>
+		<div class="gift">
+			<div id="gift_img"><a href="###"><img src="images/ghm.jpg" alt=""></a></div>
+			<div class="goods_details">
+				<h4><span>赠品</span>钢化玻璃膜（0.33mm）透明</h4>
+				<ul id="num1">
+					<li>—</li>
+					<li>1</li>
+					<li>+</li>
+				</ul>
+			</div>
+		</div>
+		<div class="gift">
+			<div id="gift_img2"><a href="###"><img src="images/sjt.jpg" alt=""></a></div>
+			<div class="goods_details">
+				<h4><span>赠品</span>钢化玻璃膜（0.33mm）透明</h4>
+				<ul id="num1">
+					<li>—</li>
+					<li>1</li>
+					<li>+</li>
+				</ul>
+			</div>
+		</div>
+	</div> 
+	<footer class="fot">
+		<p>共<span>三</span>件 &nbsp;合计 ： <span style="font-size: 0.3rem;color: #ff5722;font-weight: bolder;">￥</span><span id="price">0</span></p>
+		<div id="go_pay">去结算</div>
+	</footer>
+<script>
+	function scale1(ev) {
+		var HTML=document.getElementsByTagName('html')[0];
+		var Ww=document.documentElement.clientWidth;
+		var scale=Ww/750;
+		HTML.style.fontSize=scale*100+'px';
+	}
+	scale1();
+	var left=document.getElementById('left');
+	left.onclick=function(){
+		history.back(1)
+	}
+	var go_pay=document.getElementById('go_pay');
+	go_pay.onclick=function(){
+		window.open('pay.html','_self')
+	}
+	var num=document.getElementById('num');
+	var sub=num.getElementsByClassName('sub');
+	var add=num.getElementsByClassName('add');
+	var figure=num.getElementsByClassName('figure');
+	var circle=document.getElementById('circle');
+	var price=document.getElementById('price');
+	var x=0,p=799;
+	circle.onclick=function toggle(){
+		if (circle.style.background=='') {
+			x=1
+			figure[0].innerHTML=x;
+			price.innerHTML=x*p;
+			circle.style.background='#ff5722';
+				add[0].onclick=function(){
+					x++;
+					figure[0].innerHTML=x;
+					price.innerHTML=x*p;
+				}
+				sub[0].onclick=function(){
+					if (x<=0) {
+						return false;
+					};
+					figure[0].innerHTML=x;
+					price.innerHTML=x*p;
+					x--;
+				}
+			}else{
+				circle.style.background='';
+				figure[0].innerHTML=0;
+				price.innerHTML=0;
+			}
+		}
+</script>
+</body>
+</html>

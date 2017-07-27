@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:100px;">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/myorder.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=yes" />
+</head>
+<body>
+	<div id="outer">
+		<div class="top">
+			<span id="left"> &lt;</span>
+			<span>订单详情</span>
+		</div>
+		<div class="order_details">
+			<div id="order_date">
+				<h3>订单日期：<span>2016/10/11 10:57</span></h3>
+				<p>订单编号：<span>5161011876200272</span></p>
+			</div>
+			<span id="wait_pay">等待付款</span>
+		</div>
+		<div class="goods">
+			<div id="goods_img">
+				<a href="###"><img src="images/sj.jpg" alt=""></a>
+			</div>
+			<div class="goods_details">
+				<h3 id="goods_name">红米Note 3全网通版 金色 16GB</h3>
+				<p id="num">x <span>1</span></p>
+				<span id="price">￥799</span>
+			</div>
+		</div>
+		<div class="account">
+			<p>共<span>3</span>件商品 总额：<span id="total_price">￥799</span></p>
+			<div id="now_pay">立即付款</div>
+			<div id="eva">评价</div>
+		</div>
+		<div class="order_details">
+			<div id="order_date">
+				<h3>订单日期：<span>2016/10/11 10:57</span></h3>
+				<p>订单编号：<span>5161011876200272</span></p>
+			</div>
+			<span id="payed">已完成</span>
+		</div>
+		<div class="goods">
+			<div id="goods_img">
+				<a href="###"><img src="images/sj.jpg" alt=""></a>
+			</div>
+			<div class="goods_details">
+				<h3 id="goods_name">红米Note 3全网通版 金色 16GB</h3>
+				<p id="num">x <span>1</span></p>
+				<span id="price">￥799</span>
+			</div>
+		</div>
+		<div class="account">
+			<p>共<span>3</span>件商品 总额：<span id="total_price">￥799</span></p>
+			<div id="now_pay">再次购买</div>
+			<div id="eva">评价</div>
+		</div>
+	</div>
+<script>
+	function scale1(ev) {
+		var HTML=document.getElementsByTagName('html')[0];
+		var Ww=document.documentElement.clientWidth;
+		var scale=Ww/750;
+		HTML.style.fontSize=scale*100+'px';
+	}
+	scale1();
+	var left=document.getElementById('left');
+	left.onclick=function(){
+		history.back(1)
+	}
+	var now_pay=document.getElementById('now_pay');
+	now_pay.onclick=function(){
+		now_pay.style.background='#ff6b00'
+		window.open('pay.html','_self')
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:100px;">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/lists.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+</head>
+<body>
+	<div id="outer">
+		<div class="top">
+			<span id="left">&lt;</span>
+			<span class="middle">商品列表</span>
+			<span class="right">
+				<a href="shopcar.html"><img src="images/car.png" alt=""></a>
+			</span>
+		</div>
+		<ul class="rec">
+			<li><a href="###">推荐</a></li>
+			<li><a href="###">新品</a></li>
+			<li><a href="###">价格</a></li>
+			<li><a href="###">筛选</a></li>
+		</ul>
+		<div id="tj">
+			<a href="###"><img src="images/tj.jpg" alt=""></a>
+		</div>
+		<ul class="goods_show">
+			<li><a href="###"><img src="images/g1.jpg" alt=""></a></li>
+			<li><a href="###"><img src="images/g2.jpg" alt=""></a></li>
+			<li><a href="###"><img src="images/g3.jpg" alt=""></a></li>
+			<li><a href="###"><img src="images/g4.jpg" alt=""></a></li>
+			<li><a href="###"><img src="images/g5.jpg" alt=""></a></li>
+			<li><a href="###"><img src="images/g6.jpg" alt=""></a></li>
+		</ul>
+	</div>
+	<ul class="bot">
+		<li>
+			<a href="index.html"><img src="images/sy.png" alt=""></a>
+			<p><a href="index.html">首页</a></p>
+		</li>
+		<li>
+			<a href="shopcity_classify.html"><img src="images/fl.png" alt=""></a>
+			<p><a href="shopcity_classify.html">分类</a></p>
+		</li>
+		<li>
+			<a href="list.html"><img src="images/fx.png" alt=""></a>
+			<p><a href="list.html">发现</a></p>
+		</li>
+		<li>
+			<a href="shopcar.html"><img src="images/gwc.png" alt=""></a>
+			<p><a href="shopcar.html">购物车</a></p>
+		</li>
+		<li>
+			<a href="person.html"><img src="images/wd.png" alt=""></a>
+			<p><a href="person.html">我的</a></p>
+		</li>
+	</ul>
+<script>
+	function scale1 () {
+	var HTML=document.getElementsByTagName('html')[0];
+	var Ww=document.documentElement.clientWidth;
+	var scale=Ww/750;
+	HTML.style.fontSize=scale*100+'px';
+}
+scale1();
+var left=document.getElementById('left');
+	left.onclick=function(){
+		history.back(1)
+	}
+</script>
+</body>
+</html>

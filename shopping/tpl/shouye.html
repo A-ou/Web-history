@@ -1,0 +1,84 @@
+<div class="top">
+	<span id="left"><img src="images/left.png" alt=""></span>
+	<span id="ipt">
+		<input type="text" placeholder="请输入商品名称">
+		<button><img src="images/ss.png" alt=""></button>
+	</span>
+	<span id="shop_car" ng-click="login('shopcar')"></span>
+</div>
+<div id="lb">
+	<div id="inner">
+		<a ng-href="#/detail/{{goodes[0].id}}"><img ng-src="images/{{goodes[0].img}}" alt=""></a>
+		<a ng-href="#/detail/{{goodes[1].id}}"><img ng-src="images/{{goodes[1].img}}" alt=""></a>
+		<a ng-href="#/detail/{{goodes[2].id}}"><img ng-src="images/{{goodes[2].img}}" alt=""></a>
+	</div>
+</div>	
+<ul id="list">
+	<li style="background-color:red"></li>
+	<li></li>
+	<li></li>
+</ul>
+<ul id="all">
+	<li>
+		<a href=""><img src="images/cz.jpg" alt=""></a>
+		<a href="###">新品推荐</a>
+	</li>
+	<li>
+		<a href=""><img src="images/sa.jpg" alt=""></a>
+		<a href="###">特卖商城</a>
+	</li>
+	<li>
+		<a ng-click="login('order')"><img src="images/dd.jpg" alt=""></a>
+		<a ng-click="login('order')">我的订单</a>
+	</li>
+</ul>
+<div class="new">
+	<div class="ds_line">
+		<p class="new_tit">新品推荐</p>
+	</div>
+	<div class="new_cont">
+		<div class="new_left">
+			<div class="new_left_tit">
+				<h4>{{goodes[3].title}}</h4>
+				<p>{{goodes[3].details}}</p>
+				<span class="new-first">{{goodes[3].first}}</span>
+			</div>
+			<a ng-href="#/detail/{{goodes[3].id}}"><img ng-src="images/{{goodes[3].img}}" alt=""></a>
+		</div>
+		<ul class="new_right">
+			<li>
+				<div class="new_right_tit">
+					<h4>{{goodes[4].title}}</h4>
+					<p>{{goodes[4].details}}</p>
+					<span class="new-first">{{goodes[3].first}}</span>
+				</div>
+				<a ng-href="#/detail/{{goodes[4].id}}"><img ng-src="images/{{goodes[4].img}}" alt=""></a>
+			</li>
+			<li>
+				<div class="new_right_tit">
+					<h4>{{goodes[4].title}}</h4>
+					<p>{{goodes[4].details}}</p>
+					<span class="new-first">{{goodes[4].first}}</span>
+				</div>
+				<a ng-href="#/detail/{{goodes[5].id}}"><img ng-src="images/{{goodes[5].img}}" alt=""></a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="new hot">
+	<div class="ds_line">
+		<p class="new_tit">热卖推荐</p>
+	</div>
+	<a href="###" class="ds_hot_top_img"><img src="images/hot.jpg" alt=""></a>
+	<ul class="hot_sell">
+		<li ng-repeat="x in getM">
+			<a ng-href="#/detail/{{x.id}}">
+				<img ng-src="images/{{x.img}}" alt="">
+				<p>{{x.title}}</p>
+				<span>￥{{x.price}}</span>
+			</a>
+		</li>
+	</ul>
+	<div id="more" ng-click="getmore()">{{gengduo}}</div>
+</div>
+<div ng-include="'tpl/footer.html'"></div>
